@@ -168,7 +168,7 @@ columns=fullflexible
 
 \text Evaluate :
 \begin{align}
-\int \frac{x\brak{1+x^2}}{1+x^4}dx \nonumber
+\nonumber \int \frac{x\brak{1+x^2}}{1+x^4}dx 
 \end{align}
 \solution \\
 Let 
@@ -185,10 +185,10 @@ From~\eqref{eq:eq1} and~\eqref{eq:eq2},
 \int \frac{x\brak{1+x^2}}{1+x^4} dx&=\int \frac{(1+t)}{2\brak{1+t^2}}dt\\
 \int \frac{\brak{1+t}}{2\brak{1+t^2}}dt&=\frac{1}{2} \int \frac{1}{1+t^2}dt+\frac{1}{2}\int \frac{t}{1+t^2}dt\\
 \label{eq:eq3}
-&=\frac{1}{2}\taninv(t)+\frac{1}{2}\int \frac{t}{1+t^2}dt+C_1
+&=\frac{1}{2}\taninv{\brak{t}}+C_1+\frac{1}{2}\int \frac{t}{1+t^2}dt+
 \end{align}
 \begin{align}
-\nonumber \boxed{\because \int \frac{1}{1+x^2}dx =\taninv \brak{x}+C}
+\nonumber \boxed{\because \int \frac{1}{1+x^2}dx =\taninv{\brak{x}}+C}
 \end{align}
 Let
 \begin{align}
@@ -199,18 +199,18 @@ Let
 \label{eq:eq5}
 tdt&=\frac{dz}{2}
 \end{align}
-From~\eqref{eq:eq4} and ~\eqref{eq:eq5}
+From ~\eqref{eq:eq4} and ~\eqref{eq:eq5}
 \begin{align}
 \int \frac{t}{1+t^2}dt&=\frac{1}{2}\int \frac{dz}{z}\\
 \label{eq:eq6}
-&=\frac{1}{2}\ln{z}
+&=\frac{1}{2}\ln{z}+C_2
 \end{align}
 \begin{align}
 \nonumber \boxed{\because \int \frac{dx}{x} =\ln{x}+C}
 \end{align}
 From~\eqref{eq:eq1},~\eqref{eq:eq3},~\eqref{eq:eq4} and ~\eqref{eq:eq6}
 \begin{align}
-\int \frac{x\brak{1+x^2}}{1+x^4}dx=\frac{1}{2}\taninv(x^2)+\frac{1}{4}\ln\brak{1+x^4}
+\int \frac{x\brak{1+x^2}}{1+x^4}dx=\frac{1}{2}\taninv(x^2)+\frac{1}{4}\ln\brak{1+x^4}+C_1+C_2
 \end{align}
 \end{document}
 
